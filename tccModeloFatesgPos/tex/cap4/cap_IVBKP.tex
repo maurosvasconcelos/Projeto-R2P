@@ -1,0 +1,108 @@
+\chapter{Requisitos}
+\label{sec:requisitos}
+%http://www.devmedia.com.br/introducao-a-requisitos-de-software/29580
+
+Neste capítulo será apresentado os requisitos funcionais e não funcionais
+do aplicativo R2R.
+
+Os requisitos de um sistema(aplicatico) são descrições dos serviços fornecidos
+pelo sistema e as suas restrições operacionais. Esses requisitos refletem as
+necessidades dos clientes de um sistema que ajudam a resolver algum problema,
+por exemplo controlar um dispositivo, enviar um pedido ou encontrar informações
+\cite{sommerville:2008}.
+
+São definições e especificaçoes de um \textit{software} após
+a análise do sistema e a delimitação do escopo do software.
+Os requisitos podem ser funcionas e não funcionais, e eles fazem parte de todo
+o ciclo de vida de um projeto de \textit{software}.
+
+Portanto, um requisito é um função que o sistema proposto deve fazer ou uma
+restrição no desenvolvimento do sistema. 
+
+Existem dois tipos de classificação de requisitos que serão apresentados neste
+trabalho, são eles:
+Requisitos Funcionais (RF) e Requisitos Não-Funcionais (RNF).
+
+
+\section{Requisitos de Funcionais}
+\label{requisitosFuncionais}
+
+Os requisitos funcionais de um sistema decrevem o que o sistema deve fazer.
+Esses requisitos dependem do tipo de \textit{software} que está sendo
+desenvolvido, dos usuários a que o \textit{software} se destina e da abordagem
+geral considerada pela organização ao ridigir os requisitos. Quando expressos
+como requisitos de usuário, eles são geralmente descritos de forma bastante
+abstrata. No entanto, os requisitos funcionais descrevem a função do sistema
+detalhadamente, suas entradas e saídas, exceções etc \cite{sommerville:2008}.
+
+%Requisitos funcionais referem-se sobre o que o sistema deve fazer, ou seja,
+%suas funções e informações. Ele se preocupa com a funcionalidade e os serviços
+%do sistema,ou seja suas funçoes que o sistema deve oferecer para o cliente é
+%como o sistema se comportara diante de determinadas situações.
+
+ 
+\section{Requisitos Não Funcionais}
+\label{requisitosNaoFuncionais}
+
+
+Os requisitos não funcionais, como o nome sugere, são aqueles não diretamente
+relacionados às funções específicas fornecidas pelo sistema. Eles podem estar
+relacionados às propriedades emergentes dos sistema, como confiabilidade, tempo
+de resposta e espaço de armazenamento. Como altternativa, eles podem definir
+restrições, como a capacidade dos dispositivos de E/S (entrada/saída) e as
+representações de dados usadas nas interfaces do sistemas
+\cite{sommerville:2008}.
+
+
+%Requisitos não funcionais referem-se aos
+%critérios que qualificam os requisitos funcionais. Esses critérios podem ser de
+% qualidade para o software, ou seja, os requisitos de performance, usabilidade, confiabilidade, robustez, etc.
+%Ou então, os critérios podem ser quanto a qualidade para o processo de
+% software, ou seja, requisitos de entrega, implementação, etc.
+  
+Dessa forma, foram definidos os seguintes Requisitos Não-Funcionais do
+sistema proposto, que podem ser observados na Tabela
+\ref{tabelaRequisitosNaoFuncionais}.
+
+
+
+A Tabela \ref{tabelaRequisitos} descreve a lista de requisistos funcionais 
+da sistema proposto.
+
+\begin{table}[htp]
+\centering
+\caption{Lista de Requisitos Funcionais}
+\resizebox{14.0cm}{!} {
+\begin{tabular}{|l|l|l|}
+\hline
+Cod requisito & Nome                     & \multicolumn{1}{c|}{Descrição}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             \\ \hline
+RF01          & Tela Inicial do sistema     & \begin{tabular}[c]{@{}l@{}}O aplicativo deverá ter uma tela inícial \\que os voluntários irão informar o seu CPF e que serão \\ persistidos na base do sistema coorporativo, \\ que irá validar se o CPF informado está cadastrado ou não na base de dados. \end{tabular}\\ \hline
+RF02          & Mater Pessoas  & \begin{tabular}[c]{@{}l@{}}O aplicativo deve permitir o cadastro dos voluntários,\\Informando o seu cpf, nome, sexo, data nascimento, \\ e-mail e telefone celular. Para poder \\ visualizar as mensagens de estudos disponíveis.\end{tabular}\\ \hline
+RF03          & Apresentação de mensgens  & \begin{tabular}[c]{@{}l@{}}O aplicativo deve mostrar as mensagens de \\estudos cadastrados no sitema coorporativo.\end{tabular}\\ \hline
+\end{tabular}
+\label{tabelaRequisitos}
+}
+\end{table}
+
+
+
+%nao funcionais
+
+\begin{table}[htp]
+\centering
+\caption{Lista de Requisitos Não Funcionais}
+\resizebox{14.0cm}{!} {
+\begin{tabular}{|l|l|l|}
+\hline
+Cod requisito & Nome                     & \multicolumn{1}{c|}{Descrição}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             \\ \hline
+RNF01          & Sistema Operacional     & \begin{tabular}[c]{@{}l@{}}O sistema operacional deve ser Android.\\ O sitema operacional deverá te a versão de 4.0 ou superios.\end{tabular}\\ \hline
+RNF02          & Conexão com a internet  & \begin{tabular}[c]{@{}l@{}}O aplicativo deve ter conexão com a internet para salvar e consultar os dados.\end{tabular}\\ \hline
+RNF03          & Integração web service  & \begin{tabular}[c]{@{}l@{}}O aplicativo tera uma integração com o um web service.\\ Está integração irá ser responsável pela integração entre aplicativo e banco de dados.\end{tabular}\\ \hline
+\end{tabular}
+\label{tabelaRequisitosNaoFuncionais}
+}
+\end{table}
+
+
+
+

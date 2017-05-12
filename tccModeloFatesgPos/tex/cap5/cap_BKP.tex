@@ -1,0 +1,191 @@
+\chapter{Diagramas da UML}
+\label{cap:diagramasUML}
+%citacao validar com o prof
+
+UML é uma linguagem que define uma série de artefatos que nos ajuda na tarefa de modelar e 
+documentar os sistemas orientados a objetos que desenvolvemos. A maioria dos problemas encontrados em 
+sistemas orientados a objetos tem sua origem na construção do modelo, no desenho do sistema.
+A UML não é uma metodologia de desenvolvimento, o que significa que ela não diz
+para você o que fazer primeiro e em seguida ou como projetar seu sistema, mas
+ela lhe auxilia a visualizar seu desenho e a comunicação entre objetos.\cite{d'souza:interface}
+
+A \textit{Unified Modeling Language}  - UML é uma especificação da Object
+Management Group - OMG (OMG, 1997 - 2011). É uma linguagem gráfica de modelagem para visualizar, 
+especificar, construir e documentar os artefatos de sistemas de objetos distribuídos (UML, 2011).
+A UML possui treze modelos gráficos que estão divididos em duas categorias, os
+diagramas de aplicações estáticas que representam a estrutura e os diagramas de
+comportamentos, no entanto dentro desta última categoria, existe uma
+subcategoria que compõe os diagramas de interação \cite{Silva:2007:CiSE}.
+
+A categoria de diagramas de Estrutura inclui diagrama de classe, diagrama de
+objeto, diagrama de componentes, diagrama de estrutura composta, diagrama de
+pacote e diagrama de utilização\cite{Silva:2007:CiSE}.
+Os diagramas de Comportamento são: diagrama de caso de uso, diagrama de máquina de estados e 
+diagrama de atividades.
+Em sua subcategoria Interação estão inclusos os diagramas de sequência,
+comunicação, visão geral de interação e por ultimo, porém não menos importante
+o de temporização \cite{Silva:2007:CiSE}.
+ 
+Os diagramas UML abordados neste projeto são os de: Caso de Uso, Sequência,
+e Classe. Na imagem a seguir podemos visualizar as treze
+representações de modelos de UML.
+
+Para construção dos diagramas da UML ultilizamos o Asth
+\footnote{http://astah.net/}.
+
+\section{Diagrama de Classe}
+\label{sec:diagramaClasse}
+
+É uma modelagem muito útil para o desenvolvimento de sistemas, pois define todas
+as classes que o sistema necessita possuir e é a base para a construção dos diagramas de comunicação,
+sequência e estados. 
+ 
+O diagrama de classes representa a estrutura do sistema, recorrendo ao conceito
+de classe e suas relações. O modelo de classes resulta de um processo de abstração onde 
+são identificados os objectos relevantes do sistema em estudo.
+
+Cada classe é descrita através do seu nome, identificação de todos os seus atributos e identificação de todas 
+as operações que traduzem o seu comportamento. O diagrama de classes mostra como cada classe se relaciona 
+com as outras, tendo como objetivo, a satisfação dos requisitos funcionais
+definidos para o sistema em estudo. Cada classe representa uma tabela do banco
+de dados.
+
+
+A Figura \ref{Diagrama de Classe R2P} descreve o diagrama de Classe do
+aplicativo. Observe que o objeto Notificação, se comporta como resultado 
+do pattern descrito na Seção \ref{notificacao}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{imagens/diagramaDeClasseR2P.png}
+%\includegraphics[scale=0.70]{imagens/DiagramaClasses.png}
+\caption{Diagrama de Classe R2P}
+\label{Diagrama de Classe R2P}
+\end{figure}
+
+
+\section{Diagrama de Caso de Uso}
+\label{sec:diagramaCasoUso}
+
+O diagrama de casos de uso é um diagrama da UML cujo objetivo é representar um 
+requisito do sistema que será automatizado. Considere como requisito uma necessidade do sistema. O diagrama
+ilustrado abaixo demostra as principais funcionalidade e os atores do sistema.
+
+Na figura \ref{diagramaCasoUsoR2P} é mostrado o diagrama de caso de uso do
+sistema que contém Coordenador como atores de casos de usos. Os atores representam os
+papeis que os usuarios de casos de uso desempenham quando interagem com sistema.
+
+Abaixo ilustração do Diagrama de Caso de Uso do sistema R2P: 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{imagens/diagramaCasoUsoR2P.png}
+%\includegraphics[scale=0.90]{imagens/CasoDeUsoSgep.png}
+\caption{Caso de Uso - R2P  }
+\label{diagramaCasoUsoR2P}
+\end{figure}
+
+O diagrama de caso de uso do aplicativo R2P conta com dois atores.
+Um ator principal que se chama participante de pesquisa que será responsável por
+realizar o seu cadastro (Manter Pessoas) e visualizar notificações.
+Já o ator Bot será responsável por cadastrar as notificações dentro do
+aplicativo.
+
+\textbf{Especificação textual}
+
+O caso de uso se inicia com o bot que será um sistema interno da empresa ICF que
+será responsável por manter notificação, não iremos aprofundar neste fluxo.
+
+\textbf{Cenário Principal}
+
+O caso de uso envolvendo o ator participante de pesquisa inicia apos ele baixar
+e instalar o aplicatico em seu \textit{smartphone}, no qual o participante de
+pesquisa irá informar o seu cpf para entrar no aplicativo.
+
+
+\textbf{Alternativo 1}  (Participante de Pesquisa cadastrado no sistema
+corporativo) 
+O participante de pesquisa pode visualizar o seus dados cadastrais e realizar
+a sua atualização de dados.
+
+\textbf{Alternativo 2}  (Participante de Pesquisa visualizar
+notificação)
+O participante de pesquisa pode visualizar a lista de notificações.
+
+\textbf{Alternativo 3}  (Participante de Pesquisa cadastrado no sistema
+corporativo) O participante de pequisa pode realizar o seu cadastro pelo
+aplicativo.
+
+
+
+
+\subsection{Diagrama de Sequência}
+\label{sec:diagramaSequencia}
+
+Consiste em um diagrama que tem o objetivo de mostrar como as mensagens entre os
+objetos são trocadas no decorrer do tempo para a realização de uma
+operação.\cite{Fowler}
+
+•Um diagrama de seqüência é representado através de duas dimensões:
+–a dimensão horizontal, que representa o conjunto de objetos intervenientes;
+–a dimensão vertical que representa o tempo.
+
+A figura \ref{DiagramaSequenciaVisualizarNotificação} representa a fluxo para vusualizar as notificações no aplicativo.
+O partitcipante de pesquisa informa o cpf e seguida os dados serão conferidos se
+já não adastrado será direcionado para tela de cadastro em seguida aparecerá a
+mensagem dados gravados, caso o contrário o participante de pesquisa irá
+visualizar seu dados realizando atualizações de informações do cadastro
+retornando a mensagem dados alterados e em sequência listar as notificações,
+retornando a mensagem dados listados.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{imagens/diagramaSequenciaR2P.png}
+%\includegraphics[scale=0.60]{imagens/DiagramaSequenciaAutenticar.png}
+\caption{Diagrama de Sequencia  Visualizar Notificação}
+\label{DiagramaSequenciaVisualizarNotificação }
+\end{figure}
+
+
+
+\section{Diagrama de Componentes}
+\label{sec:diagramaComponentes}
+
+O diagrama de componentes permite a modelagem lógica e física de um sistema,
+através da visão dos seus componentes e relacionamentos entre eles.
+Semelhante a um pacote, mas com enfoque do empacotamento físico do código. 
+É composto basicamente por componete, interface e relacionamentos.
+
+Na figura \ref{DiagramaComponetesR2p} é mostrado o diagrama de componentes
+do aplicativo R2P.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{imagens/ComponentDiagramaR2P.png}
+%\includegraphics[scale=0.60]{imagens/DiagramaSequenciaAutenticar.png}
+\caption{Diagrama de Componetes }
+\label{DiagramaComponetesR2p}
+\end{figure}
+
+
+\section{Arquitetura de Funcionamento do Aplicativo}
+\label{sec:arquiteturaFuncionamento}
+
+Ao acessar o aplicativo R2P os telefones devem estar na internet e com
+sistema operacional \textit{android} assim o fluxo segue passando por um
+\textit{firewell} interno da empresa ICF que irá direcionar para um
+servidor apache tomcat e assim acessar os a base de dados.
+Conforme demostrado na \ref{restwebsrvices}.
+
+
+\begin{figure}[h]
+\centering
+%\includegraphics[width=15cm]{imagens/diagramaAquitetura.png}
+%\includegraphics[scale=0.60]{imagens/EngenhariaSoftware.png}
+\includegraphics[width=15cm]{imagens/DiagramaImplantacao.png}
+\caption{Aquitetura de funcionamento do Aplicativo}
+\label{restwebsrvices}
+\end{figure}
+
+

@@ -1,0 +1,400 @@
+\chapter{Estudo de Caso - Aplicativo R2P}
+\label{sec:estudoCaso}
+
+Neste capítulo será apresentado o Estudo de Caso do aplicativo R2P, seus
+respectivos Requisitos, Diagramas da UML e Prototipação.
+
+
+%-----------------------------------------------------------------------------------------------------------
+\section{Requisitos}
+\label{sec:requisitos}
+%http://www.devmedia.com.br/introducao-a-requisitos-de-software/29580
+
+
+
+Os requisitos de um sistema(aplicativo) são descrições dos serviços fornecidos
+pelo sistema e as suas restrições operacionais. Esses requisitos refletem as
+necessidades dos clientes de um sistema que ajudam a resolver algum problema,
+por exemplo controlar um dispositivo, enviar um pedido ou encontrar informações
+\cite{sommerville:2008}.
+
+São definições e especificações de um \textit{software} após
+a análise do sistema e a delimitação do escopo do software.
+Os requisitos podem ser funcionas e não funcionais, e eles fazem parte de todo
+o ciclo de vida de um projeto de \textit{software}.
+
+Portanto, um requisito é uma função que o sistema proposto deve fazer ou uma
+restrição no desenvolvimento do sistema. 
+
+Existem dois tipos de classificação de requisitos que serão apresentados neste
+trabalho, são eles:
+Requisitos Funcionais (RF) e Requisitos Não-Funcionais (RNF).
+
+
+\subsection{Requisitos de Funcionais}
+\label{subsec:requisitosFuncionais}
+
+Os requisitos funcionais de um sistema descrevem o que o sistema deve fazer.
+Esses requisitos dependem do tipo de \textit{software} que está sendo
+desenvolvido, dos usuários a que o \textit{software} se destina e da abordagem
+geral considerada pela organização ao redigir os requisitos. Quando expressos
+como requisitos de usuário, eles são geralmente descritos de forma bastante
+abstrata. No entanto, os requisitos funcionais descrevem a função do sistema
+detalhadamente, suas entradas e saídas, exceções e etc \cite{sommerville:2008}.
+
+%Requisitos funcionais referem-se sobre o que o sistema deve fazer, ou seja,
+%suas funções e informações. Ele se preocupa com a funcionalidade e os serviços
+%do sistema,ou seja suas funçoes que o sistema deve oferecer para o cliente é
+%como o sistema se comportara diante de determinadas situações.
+
+
+\subsection{Requisitos Não Funcionais}
+\label{subsec:requisitosNaoFuncionais}
+
+Os requisitos não funcionais, como o nome sugere, são aqueles não diretamente
+relacionados às funções específicas fornecidas pelo sistema. Eles podem estar
+relacionados às propriedades emergentes dos sistema, como confiabilidade, tempo
+de resposta e espaço de armazenamento. Como alternativa, eles podem definir
+restrições, como a capacidade dos dispositivos de E/S (entrada/saída) e as
+representações de dados usadas nas interfaces do sistemas
+\cite{sommerville:2008}.
+
+
+%Requisitos não funcionais referem-se aos
+%critérios que qualificam os requisitos funcionais. Esses critérios podem ser de
+% qualidade para o software, ou seja, os requisitos de performance, usabilidade, confiabilidade, robustez, etc.
+%Ou então, os critérios podem ser quanto a qualidade para o processo de
+% software, ou seja, requisitos de entrega, implementação, etc.
+  
+Dessa forma, foram definidos os seguintes Requisitos Não-Funcionais do
+sistema proposto, que podem ser observados na Tabela
+\ref{tabelaRequisitosNaoFuncionais}.
+
+
+A Tabela \ref{tabelaRequisitos} descreve a lista de requisitos funcionais 
+da sistema proposto.
+
+\begin{table}[htp]
+\centering
+\caption{Lista de Requisitos Funcionais}
+\resizebox{14.0cm}{!} {
+\begin{tabular}{|l|l|l|}
+\hline
+\\ \hline
+RF01          & Tela Inicial do sistema     & \begin{tabular}[c]{@{}l@{}}O aplicativo deverá ter uma tela inícial \\que os voluntários irão informar o seu CPF e que serão \\ persistidos na base do sistema coorporativo, \\ que irá validar se o CPF informado está cadastrado ou não na base de dados. \end{tabular}\\ \hline
+RF02          & Mater Pessoas  & \begin{tabular}[c]{@{}l@{}}O aplicativo deve permitir o cadastro dos voluntários,\\Informando o seu cpf, nome, sexo, data nascimento, \\ e-mail e telefone celular. Para poder \\ visualizar as mensagens de estudos disponíveis.\end{tabular}\\ \hline
+RF03          & Apresentação de mensgens  & \begin{tabular}[c]{@{}l@{}}O aplicativo deve mostrar as mensagens de \\estudos cadastrados no sitema coorporativo.\end{tabular}\\ \hline
+\end{tabular}
+\label{tabelaRequisitos}
+}
+\end{table}
+
+
+%nao funcionais
+
+\begin{table}[htp]
+\centering
+\caption{Lista de Requisitos Não Funcionais}
+\resizebox{14.0cm}{!} {
+\begin{tabular}{|l|l|l|}
+\hline
+\\ \hline
+RNF01          & Sistema Operacional     & \begin{tabular}[c]{@{}l@{}}O sistema operacional deve ser Android.\\ O sitema operacional deverá te a versão de 4.0 ou superios.\end{tabular}\\ \hline
+RNF02          & Conexão com a internet  & \begin{tabular}[c]{@{}l@{}}O aplicativo deve ter conexão com a internet para salvar e consultar os dados.\end{tabular}\\ \hline
+RNF03          & Integração web service  & \begin{tabular}[c]{@{}l@{}}O aplicativo tera uma integração com o um web service.\\ Está integração irá ser responsável pela integração entre aplicativo e banco de dados.\end{tabular}\\ \hline
+\end{tabular}
+\label{tabelaRequisitosNaoFuncionais}
+}
+\end{table}
+
+
+%-----------------------------------------------------------------------------------------------------------
+\section{Diagramas da UML}
+\label{sec:diagramasUML}
+
+%citacao validar com o prof
+
+UML é uma linguagem que define uma série de artefatos que nos ajuda na tarefa de modelar e 
+documentar os sistemas orientados a objetos que desenvolvemos. A maioria dos problemas encontrados em 
+sistemas orientados a objetos tem sua origem na construção do modelo, no desenho do sistema.
+A UML não é uma metodologia de desenvolvimento, o que significa que ela não diz
+para você o que fazer primeiro e em seguida ou como projetar seu sistema, mas
+ela lhe auxilia a visualizar seu desenho e a comunicação entre objetos.\cite{d'souza:interface}
+
+A \textit{Unified Modeling Language}  - UML é uma especificação da \textit{ Object Management Group } - OMG (OMG, 1997 - 2011). É uma linguagem gráfica de modelagem para visualizar, 
+especificar, construir e documentar os artefatos de sistemas de objetos distribuídos (UML, 2011).
+A UML possui treze modelos gráficos que estão divididos em duas categorias, os
+diagramas de aplicações estáticas que representam a estrutura e os diagramas de
+comportamentos, no entanto dentro desta última categoria, existe uma
+subcategoria que compõe os diagramas de interação \cite{Silva:2007:CiSE}.
+
+A categoria de diagramas de Estrutura inclui diagrama de classe, diagrama de
+objeto, diagrama de componentes, diagrama de estrutura composta, diagrama de
+pacote e diagrama de utilização\cite{Silva:2007:CiSE}.
+Os diagramas de Comportamento são: diagrama de caso de uso, diagrama de máquina de estados e 
+diagrama de atividades.
+Em sua subcategoria Interação estão inclusos os diagramas de sequência,
+comunicação, visão geral de interação e por ultimo, porém não menos importante
+o de temporização \cite{Silva:2007:CiSE}.
+ 
+Os diagramas UML abordados neste projeto são os de: Caso de Uso, Sequência,
+e Classe. Na imagem a seguir podemos visualizar as treze
+representações de modelos de UML.
+
+Para construção dos diagramas da UML utilizamos o Asth
+\footnote{http://astah.net/}.
+
+
+\subsection{Diagrama de Classes}
+\label{subsec:diagramaClasse}
+
+É uma modelagem muito útil para o desenvolvimento de sistemas, pois define todas
+as classes que o sistema necessita possuir e é a base para a construção dos diagramas de comunicação,
+sequência e estados. 
+ 
+O diagrama de classes representa a estrutura do sistema, recorrendo ao conceito
+de classe e suas relações. O modelo de classes resulta de um processo de abstração onde 
+são identificados os objetos relevantes do sistema em estudo.
+
+Cada classe é descrita através do seu nome, identificação de todos os seus atributos e identificação de todas 
+as operações que traduzem o seu comportamento. O diagrama de classes mostra como cada classe se relaciona 
+com as outras, tendo como objetivo, a satisfação dos requisitos funcionais
+definidos para o sistema em estudo. Cada classe representa uma tabela do banco
+de dados.
+
+
+A Figura \ref{fig:DiagramaClasse} descreve o diagrama de Classe do
+aplicativo. Observe que o objeto Notificação, se comporta como resultado 
+do pattern descrito na Seção \ref{notificacao}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{imagens/diagramaDeClasseR2P.png}
+%\includegraphics[scale=0.70]{imagens/DiagramaClasses.png}
+\caption{Diagrama de Classe R2P}
+\label{fig:DiagramaClasse}
+\end{figure}
+
+\subsection{Diagrama de Caso de Uso}
+\label{subsec:diagramaCasoUso}
+
+O diagrama de casos de uso é um diagrama da UML cujo objetivo é representar um 
+requisito do sistema que será automatizado. Considere como requisito uma necessidade do sistema. O diagrama
+ilustrado abaixo demostra as principais funcionalidade e os atores do sistema.
+
+Na figura \ref{fig:diagramaCasoUsoR2P} é mostrado o diagrama de caso de uso do
+sistema que contém Coordenador como atores de casos de usos. Os atores representam os
+papeis que os usuários de casos de uso desempenham quando interagem com sistema.
+
+Abaixo ilustração do Diagrama de Caso de Uso do sistema R2P: 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{imagens/diagramaCasoUsoR2P.png}
+%\includegraphics[scale=0.90]{imagens/CasoDeUsoSgep.png}
+\caption{Caso de Uso - R2P  }
+\label{fig:diagramaCasoUsoR2P}
+\end{figure}
+
+O diagrama de caso de uso do aplicativo R2P conta com dois atores.
+Um ator principal que se chama participante de pesquisa que será responsável por
+realizar o seu cadastro (Manter Pessoas) e visualizar notificações.
+Já o ator Bot será responsável por cadastrar as notificações dentro do
+aplicativo.
+
+\textbf{Especificação textual}
+
+O caso de uso se inicia com o Bot que será um sistema interno da empresa ICF que
+será responsável por manter notificação, não iremos aprofundar neste fluxo.
+
+\textbf{Cenário Principal}
+
+O caso de uso envolvendo o ator participante de pesquisa inicia apos ele baixar
+e instalar o aplicativo em seu \textit{smartphone}, no qual o participante de
+pesquisa irá informar o seu CPF para entrar no aplicativo.
+
+
+\textbf{Alternativo 1}  (Participante de Pesquisa cadastrado no sistema
+corporativo) 
+O participante de pesquisa pode visualizar o seus dados cadastrais e realizar
+a sua atualização de dados.
+
+\textbf{Alternativo 2}  (Participante de Pesquisa visualizar
+notificação)
+O participante de pesquisa pode visualizar a lista de notificações.
+
+\textbf{Alternativo 3}  (Participante de Pesquisa cadastrado no sistema
+corporativo) O participante de pesquisa pode realizar o seu cadastro pelo
+aplicativo.
+
+
+\subsection{Diagrama de Sequência}
+\label{subsec:diagramaSequencia}
+
+Consiste em um diagrama que tem o objetivo de mostrar como as mensagens entre os
+objetos são trocadas no decorrer do tempo para a realização de uma
+operação.\cite{Fowler}
+
+•Um diagrama de sequência é representado através de duas dimensões:
+–a dimensão horizontal, que representa o conjunto de objetos intervenientes;
+–a dimensão vertical que representa o tempo.
+
+A figura \ref{fig:DiagramaSequenciaVisualizarNotificação } representa a fluxo para
+visualizar as notificações no aplicativo.
+O participante de pesquisa informa o CPF e seguida os dados serão conferidos se
+já não adastrado será direcionado para tela de cadastro em seguida aparecerá a
+mensagem dados gravados, caso o contrário o participante de pesquisa irá
+visualizar seu dados realizando atualizações de informações do cadastro
+retornando a mensagem dados alterados e em sequência listar as notificações,
+retornando a mensagem dados listados.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{imagens/diagramaSequenciaR2P.png}
+%\includegraphics[scale=0.60]{imagens/DiagramaSequenciaAutenticar.png}
+\caption{Diagrama de Sequencia  Visualizar Notificação}
+\label{fig:DiagramaSequenciaVisualizarNotificação }
+\end{figure}
+
+
+
+\subsection{Diagrama de Componentes}
+\label{subsec:diagramaComponentes}
+
+O diagrama de componentes permite a modelagem lógica e física de um sistema,
+através da visão dos seus componentes e relacionamentos entre eles.
+Semelhante a um pacote, mas com enfoque do empacotamento físico do código. 
+É composto basicamente por componente, interface e relacionamentos.
+
+Na figura \ref{fig:DiagramaComponetesR2p} é mostrado o diagrama de componentes
+do aplicativo R2P.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=15cm]{imagens/ComponentDiagramaR2P.png}
+%\includegraphics[scale=0.60]{imagens/DiagramaSequenciaAutenticar.png}
+\caption{Diagrama de Componetes }
+\label{fig:DiagramaComponetesR2p}
+\end{figure}
+
+
+\subsection{Arquitetura de Funcionamento do Aplicativo}
+\label{subsec:arquiteturaFuncionamento}
+
+Ao acessar o aplicativo R2P os telefones devem estar na internet e com
+sistema operacional \textit{android} assim o fluxo segue passando por um
+\textit{firewell} interno da empresa ICF que irá direcionar para um
+servidor apache tomcat e assim acessar os a base de dados.
+Conforme demostrado na \ref{fig:restwebsrvices}.
+
+
+\begin{figure}[h]
+\centering
+%\includegraphics[width=15cm]{imagens/diagramaAquitetura.png}
+%\includegraphics[scale=0.60]{imagens/EngenhariaSoftware.png}
+\includegraphics[width=15cm]{imagens/DiagramaImplantacao.png}
+\caption{Aquitetura de funcionamento do Aplicativo}
+\label{fig:restwebsrvices}
+\end{figure}
+
+
+%-----------------------------------------------------------------------------------------------------------
+\section{Prototipação}
+\label{sec:prototipacaoR2P}
+
+A prototipação é uma etapa fundamental na construção de software,
+pois ajuda a facilitar o entendimento dos requisitos, apresentar conceitos e
+funcionalidades do software.
+
+Nesta etapa, é prudente que todos os envolvidos no projeto também estejam 
+envolvidos em sua criação.
+
+Os protótipos são grandes aliados das metodologias ágeis de desenvolvimento pois
+garantem maior alinhamento entre equipe e cliente. Eles podem ser desenvolvidos
+em diferentes níveis de fidelidade: quanto maior ela for, mais o protótipo se assemelhará 
+ao resultado entregue. No entanto, um protótipo de alta fidelidade leva mais tempo para 
+ser criado ou modificado. A escolha do protótipo ideal varia de acordo com o nível de 
+entendimento do negócio, a complexidade dos requisitos, prazo e orçamento para
+elaboração.
+
+Podemos dividir os protótipos em três categorias: \textit{Wireframes}
+ e Rascunhos, Protótipos Visuais e Protótipos Interativos.
+ 
+Um software normalmente é reproduzido em cópias originais e seu código-fonte é
+único, porém tem complexidades suficientes para necessitar de protótipos antes 
+de seu total desenvolvimento. Os protótipos de software são representações que
+descrevem todas as características funcionais do software, ou seja, aquelas que 
+serão utilizadas no dia-a-dia, pelo usuário \cite{rodriguescurso}.
+
+Utilizaremos em nosso aplicativo os protótipos visuais, que são criados com um
+programa de edição gráfica Pencil\footnote{http://pencil.evolus.vn/}, estes
+protótipos tem maior apoio visual. Não possuem interações de tela e demandam mais tempo para fazer ajustes e melhorias.
+São uma ótima opção para telas com maior ênfase em estética e usabilidade,
+quando os requisitos já foram entendidos.
+
+
+\subsection{Aplicativo R2P}
+\label{subsec:aplicativoR2P}
+
+\textbf{Tela do Aplicativo R2P}
+\begin{figure}[H]
+\centering
+\includegraphics[width=6cm]{imagens/telaInicial.png}
+%\includegraphics[scale=0.90]{imagens/telaPrincipal.png}
+\caption{Tela entrar no Aplicativo R2P}
+\label{fig:telaPrincipal}
+\end{figure}
+
+Nesta figura \ref{fig:telaPrincipal} informamos o CPF e podemos entrar no
+aplicativo.
+
+
+\textbf{Tela do aplicativo R2P Cadastro de Participante de Pesquisa}
+\begin{figure}[H]
+\centering
+\includegraphics[width=6cm]{imagens/cadastrarPessoa.png}
+%\includegraphics[scale=0.90]{imagens/TelaCronogramaAula.png}
+\caption{Tela De Cadastro Participante de Pesquisa}
+\label{fig:TelaCadastrarPessoa}
+\end{figure}
+
+Nesta figura \ref{fig:TelaCadastrarPessoa} podemos incluir um novo participante
+de pesquisa.
+A tela apresenta os campos para o participante de pesquisa digitar os dados
+do participante.
+Na parte superior temos as ações da tela.
+
+
+\textbf{Tela do aplicativo R2P Editar de Participante de Pesquisa}
+\begin{figure}[H]
+\centering
+\includegraphics[width=6cm]{imagens/editarPessoa.png}
+%\includegraphics[scale=0.90]{imagens/TelaCronogramaAula.png}
+\caption{Tela De Edição Participante de Pesquisa}
+\label{fig:TelaEditarPessoa}
+\end{figure}
+
+Nesta figura \ref{fig:TelaEditarPessoa} além de podemos editar os dados do
+participante de pesquisa, podemos visualizar as mensagens dos estudos
+(notificações).
+A tela apresenta os campos para o participante de pesquisa digitar os dados
+do participante. Na parte
+superior temos as ações da tela.
+
+
+\textbf{Tela do aplicativo R2P Listar Notificações}
+\begin{figure}[H]
+\centering
+\includegraphics[width=6cm]{imagens/listarNotificacao.png}
+%\includegraphics[scale=0.90]{imagens/TelaCronogramaAula.png}
+\caption{Tela De Visualização de notificações}
+\label{fig:TelaVisualizarNotificacao}
+\end{figure}
+
+Nesta figura \ref{fig:TelaVisualizarNotificacao}  podemos visualizar todas as
+notificações dos estudo que o participante de pesquisa pode participar
+de acordo com o seu perfil.
+Na parte superior temos as ações da tela.
+
+
