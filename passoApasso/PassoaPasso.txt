@@ -1,0 +1,19 @@
+Para acesso ao aplicativo R2P é necessário realizar o download na loja google \textit{play} endereço:
+\footnote{https://play.google.com/store/apps/details?id=br.com.r2p},
+ou acessar o \textit{play store} e digitar na barra de busca r2p será o primeiro
+da lista conforme figura \ref{fig:telaPlayStore}. Instale o
+aplicativo no Android versão igual ou superior a 4.2 api 17.
+Conforme figura \ref{fig:telaInicialApp} podemos iniciar o acesso ao 
+sistema informando um cpf válido e com o celular conectado na internet, clicar
+no botão entrar.
+Ao entrar no aplicativo ele irá validar se o cpf já esta cadastrado na base de
+dados. Caso não esteja será direcionado para tela de cadastro conforme figura
+\ref{fig:telaCadastroApp}. Informe o dados e clique em salvar, os dados serão
+salvos na base de dados. Caso o cpf já tenha sido cadastrado antes será
+direcionado para a tela principal do aplicativo conforme mostra a figura 
+\ref{telaPrincipalApp}.
+Nesta tela principal do sistema pode ser realizada duas ações. Visualizar dados
+pessoais conforma figura \ref{telaEditarDadosPessoaisApp}. Nesta tela pode ser
+alterado só dados pessoais. A outra opção da tela principal é a de visualizar
+estudos, que mostra as mensagens dos estudos disponíveis na empresa ICF,
+conforme figura \ref{telaVisualizarEstudosApp}.
