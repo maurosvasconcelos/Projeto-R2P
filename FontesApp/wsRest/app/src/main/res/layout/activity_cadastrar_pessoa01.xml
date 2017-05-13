@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastrar_pessoa01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.projeto.Activity.CadastrarPessoa"
+    >
+
+    <EditText
+        android:id="@+id/dtNacimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextNome"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Data Nascimento dd/mm/aaaa"
+        android:inputType="date"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/checkBoxM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dtNacimento"
+        android:layout_marginTop="21dp"
+        android:checked="false"
+        android:onClick="onCheckboxClickedM"
+        android:text="Masculino"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBoxF"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHighlight="@color/lilas"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextCelular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Celular"
+        android:inputType="phone"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextFixo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editTextCelular"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Fixo"
+        android:inputType="phone"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonVoltar"
+        android:layout_marginTop="54dp"
+        android:hint="Nome"
+        android:selectAllOnFocus="false"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+
+
+    <Button
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:id="@+id/btnSalvar"
+        android:onClick="onClick"
+        android:background="@drawable/button_lilas"
+        android:textColor="@color/branco"
+        android:fontFamily="calibri"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+
+    <CheckBox
+        android:id="@+id/checkBoxF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBoxM"
+        android:layout_alignBottom="@+id/checkBoxM"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/checkBoxM"
+        android:onClick="onCheckboxClickedF"
+        android:text="Feminino"
+        android:textColorLink="@android:color/holo_green_dark"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextCpf"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/btnSalvar"
+        android:layout_alignEnd="@+id/checkBoxF"
+        android:layout_alignParentStart="true"
+        android:editable="true"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="CPF"
+        android:inputType="number"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

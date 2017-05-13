@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.r2p">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo_novo"
+        android:label="@string/app_name"
+        android:logo="@mipmap/ic_logo_novo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="br.com.r2p.Activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="br.com.r2p.Activity.CadastrarPessoa"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_cadastrarPessoa"
+            android:theme="@style/AppThemeMenu" />
+
+        <activity
+            android:name="br.com.r2p.Activity.EditarPessoa"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_editarPessoa"
+            android:theme="@style/AppThemeMenu" />
+
+        <activity
+            android:name="br.com.r2p.Activity.VisualizarEstudo"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_visualizar_estudo"
+            android:theme="@style/AppThemeMenu" />
+
+        <activity android:name="br.com.r2p.Activity.Activity_inicial"
+            android:screenOrientation="portrait"
+            android:label=""
+            android:theme="@style/AppThemeMenu" />
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">R2P</string>
+    <string name="app_titulo">R2P</string>
+    <string name="action_settings">Settings</string>
+    <string name="teste">Sair</string>
+    <string name="title_activity_">Activity</string>
+    <string name="title_activity_cadastrarPessoa">Cadastro</string>
+    <string name="title_activity_ajudoCiencias">R2P</string>
+    <string name="title_activity_editarPessoa">Edição</string>
+    <string name="title_activity_visualizar_estudo">Visualizar Estudos</string>
+    <string name="title_activity_teste_mauro">testeMauro</string>
+    <string name="title_activity_principal"></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

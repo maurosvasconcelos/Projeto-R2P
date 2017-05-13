@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_editar_pessoa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.r2p.Activity.EditarPessoa"
+    >
+
+
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Salvar"
+        android:background="@drawable/button_lilas"
+        android:textColor="@color/branco"
+        android:fontFamily="calibri"
+        android:layout_alignParentRight="true"
+        />
+
+    <EditText
+        android:id="@+id/editTextCpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnEditar"
+        android:layout_marginTop="14dp"
+        android:editable="true"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="calibri"
+
+        android:hint="CPF"
+        android:inputType="number"
+
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextCodigo"
+        android:layout_width="106dp"
+        android:cursorVisible="false"
+        android:editable="true"
+        android:enabled="false"
+        android:hint=""
+        android:inputType="number"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText"
+        android:background="@color/cinza"
+        android:layout_height="30dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextCpf"
+        android:editable="true"
+        android:ems="5"
+        android:enabled="false"
+
+        android:fontFamily="calibri"
+        android:hint="Nome"
+        android:maxLines="1"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/dtNacimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextNome"
+        android:editable="true"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="calibri"
+        android:hint="Data Nascimento dd/mm/aaaa"
+        android:inputType="date"
+        android:maxLines="1"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/checkBoxM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:checked="false"
+        android:editable="true"
+        android:enabled="false"
+        android:fontFamily="calibri"
+        android:onClick="onCheckboxClickedM"
+        android:text="Masculino"
+        android:textColorLink="@color/lilas"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText,TextViewEdits" />
+
+    <CheckBox
+        android:id="@+id/checkBoxF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBoxM"
+        android:layout_alignBottom="@+id/checkBoxM"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/checkBoxM"
+        android:editable="true"
+        android:enabled="false"
+        android:onClick="onCheckboxClickedF"
+        android:textColorLink="@color/lilas"
+        android:text="Feminino"
+        tools:ignore="HardcodedText,TextViewEdits"
+        android:fontFamily="calibri"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBoxM"
+        android:ems="10"
+
+        android:fontFamily="calibri"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextCelular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextEmail"
+        android:ems="10"
+
+        android:fontFamily="calibri"
+        android:hint="Celular"
+        android:inputType="phone"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextFixo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextCelular"
+        android:ems="10"
+
+        android:fontFamily="calibri"
+        android:hint="Fixo"
+        android:inputType="phone"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
