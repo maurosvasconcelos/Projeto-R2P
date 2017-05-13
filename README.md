@@ -19,4 +19,4 @@ Artefatos:
 
 <a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/FontesApp/wsRest">Fontes do aplicativo</a>
 
-<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/FontesApp/intaladorapp">Instalador do aplicativo .apk</a>
+<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/intaladorapp">Instalador do aplicativo .apk</a>
