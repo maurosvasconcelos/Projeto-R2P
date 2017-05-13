@@ -10,7 +10,7 @@ Orientador: Prof. Msc. Edjalma Queiroz da Silva
 
 Artefatos:
 
-<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/documentoPrincipal.pdf">Documento</a>
+<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/documentoPrincipal.pdf">Documento Escrito</a>
 
-<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/documentoPrincipal.pdf">Passo a passo para acessar o aplicativo</a>
+<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/documentoPrincipal.pdf">Video de acesso ao aplicativo</a>
 
