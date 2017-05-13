@@ -12,5 +12,10 @@ Artefatos:
 
 <a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/documentoPrincipal.pdf">Documento Escrito</a>
 
-<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/documentoPrincipal.pdf">Video de acesso ao aplicativo</a>
+<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/video/demostracao.mp4">Video de demostração de acesso ao aplicativo</a>
 
+<a href="https://github.com/maurosvasconcelos/Projeto-R2P/tree/master/tccPosMobile_Mauro">Modelo Latex usado para gerar documento Principal</a>
+
+<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/FontesApp/wsRest">Fontes do aplicativo</a>
+
+<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/FontesApp/intalador apk do app">Instalador do aplicativo .apk</a>
