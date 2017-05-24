@@ -11,15 +11,16 @@ O objetivo do trabalho é o desenvolvimento de um aplicativo para recrutamento d
 <br>
 <h2>Artefatos:</h2>
 <br>
-<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/documentoPrincipal.pdf">Documento Escrito</a>
+&bull;<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/documentoPrincipal.pdf">Documento Escrito</a>
 <br>
-<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/video/demostracao.mp4">Video de demostração de acesso ao aplicativo</a>
+&bull;<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/video/demostracao.mp4">Video de demostração de acesso ao aplicativo</a>
 <br>
-<a href="https://github.com/maurosvasconcelos/Projeto-R2P/tree/master/tccPosMobile_Mauro">Modelo Latex usado para gerar documento Principal</a>
+&bull;<a href="https://github.com/maurosvasconcelos/Projeto-R2P/tree/master/tccPosMobile_Mauro">Modelo Latex usado para gerar documento Principal</a>
 <br>
-<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/FontesApp/wsRest">Fontes do aplicativo</a>
+&bull;<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/FontesApp/wsRest">Fontes do aplicativo</a>
 <br>
-<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/intaladorapp">Instalador do aplicativo .apk</a>
-
+&bull;<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/intaladorapp">Instalador do aplicativo .apk</a>
+<br>
+&bull;<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/termoAutorizacaoMauroVasconcelos.pdf">Termo de autorização</a>
 </body>
 </html>
