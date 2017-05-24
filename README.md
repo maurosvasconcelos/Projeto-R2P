@@ -13,14 +13,14 @@ O objetivo do trabalho é o desenvolvimento de um aplicativo para recrutamento d
 <br>
 &bull;<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/documentoPrincipal.pdf">Documento Escrito</a>
 <br>
-&bull;<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/video/demostracao.mp4">Video de demostração de acesso ao aplicativo</a>
+&bull;<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/video/demostracao.mp4">Vídeo de demonstração de acesso ao aplicativo</a>
 <br>
-&bull;<a href="https://github.com/maurosvasconcelos/Projeto-R2P/tree/master/tccPosMobile_Mauro">Modelo Latex usado para gerar documento Principal</a>
+&bull;<a href="https://github.com/maurosvasconcelos/Projeto-R2P/tree/master/tccPosMobile_Mauro">Modelo Látex usado para gerar documento Principal</a>
 <br>
 &bull;<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/FontesApp/wsRest">Fontes do aplicativo</a>
 <br>
 &bull;<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/intaladorapp">Instalador do aplicativo .apk</a>
 <br>
-&bull;<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/termoAutorizacaoMauroVasconcelos.pdf">Termo de autorização</a>
+&bull;<a href="https://github.com/maurosvasconcelos/Projeto-R2P/blob/master/termoAutorizacaoMauroVasconcelos.pdf">Termo de autorização para publicação</a>
 </body>
 </html>
