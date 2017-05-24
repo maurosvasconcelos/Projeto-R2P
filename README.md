@@ -1,8 +1,8 @@
-Apresentação do Trabalho de Conclusão de Pós Graduação 
+<center><b> Apresentação do Trabalho de Conclusão de Pós Graduação </b></center>
 
-Aplicativo Android R2P
+<center><b>Aplicativo Android R2P</b></center>
 
-Desenvolvimento de um aplicativo para recrutamento de participantes de pesquisa para empresa ICF.
+O objetivod do trabalho é o desenvolvimento de um aplicativo para recrutamento de participantes de pesquisas para empresa ICF.
 
 Autor: Mauro Vasconcelos de Paulo
 
